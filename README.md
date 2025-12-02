@@ -23,20 +23,20 @@ Loyiha ochiq manbada bo‘lib, undan bemalol foydalanish yoki uni rivojlantirish
 
 
 🛠️ O‘rnatish
-<style>
+
 # Repozitoriyani klonlash
 git clone https://github.com/ABULFAYZ-DEV/Suniiy-intelekt-uzb
-</style>
 
-<style>
+
+
 # Loyihaga kirish
 cd Suniiy-intelekt-uzb
-</style>
 
-<style>
+
+
 # Kerakli kutubxonalarni o‘rnatish
 pip install -r requirements.txt
-</style>
+
 
 ![Banner](banner.png)
 
