@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mening Sun'iy Intellektim</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="gap.js" defer></script>
+</head>
+<body>
+    <div id="container" class="container">
+        <header id="header">
+            <div id="logo" class="logo">
+                <span id="logo-icon">🤖</span>
+                <h1 id="main-title">Mening AI Yordamchim</h1>
+            </div>
+            <p id="header-description">Sun'iy intellekt asistenti bilan suhbatlashishingiz mumkin</p>
+        </header>
+
+        <main id="main-content" class="main-content">
+            <section id="chat-section" class="chat-section">
+                <div id="chat-header" class="chat-header">
+                    <h2 id="chat-title">Suhbat</h2>
+                    <span id="status" class="status">Online</span>
+                </div>
+                
+                <div id="chat-messages" class="chat-messages">
+                    <div class="message ai-message">
+                        <div class="message-content">
+                            Salom! Men sizning sun'iy intellekt yordamchingizman. Sizga qanday yordam bera olaman?
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="chat-input-area" class="chat-input">
+                    <input type="text" id="user-input" placeholder="Xabaringizni yozing...">
+                    <button id="send-btn">
+                        <span>➤</span>
+                    </button>
+                </div>
+            </section>
+            
+            <aside id="sidebar" class="sidebar">
+                <div class="collapsible-section">
+                    <div class="section-header" data-target="settings-card">
+                        <h3>⚙️ Sozlamalar</h3>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div id="settings-card" class="info-card collapsible-content">
+                        <div class="settings">
+                            <label class="switch">
+                                <input type="checkbox" id="dark-mode-toggle">
+                                <span class="slider">Qorong'i rejim</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapsible-section">
+                    <div class="section-header" data-target="stats-card">
+                        <h3>📊 Statistika</h3>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div id="stats-card" class="info-card collapsible-content">
+                        <div class="stats">
+                            <div class="stat-item">
+                                <div class="stat-value" id="message-count">1</div>
+                                <div class="stat-label">Xabarlar</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value" id="questions-count">0/30</div>
+                                <div class="stat-label">Savollar</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapsible-section">
+                    <div class="section-header" data-target="questions-card">
+                        <h3>❓ Tez Savollar</h3>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div id="questions-card" class="info-card collapsible-content">
+                        <div class="questions-list">
+                            <button class="question-btn" data-question="Fizika nima?">Fizika nima?</button>
+                            <button class="question-btn" data-question="Kimyo nimani o'rganadi?">Kimyo nimani o'rganadi?</button>
+                            <button class="question-btn" data-question="Steam nima?">Steam nima?</button>
+                            <button class="question-btn" data-question="Dasturlash nima?">Dasturlash nima?</button>
+                            <button class="question-btn" data-question="Python nima?">Python nima?</button>
+                            <button class="question-btn" data-question="Internet qanday ishlaydi?">Internet qanday ishlaydi?</button>
+                            <button class="question-btn" data-question="Biologiya nima?">Biologiya nima?</button>
+                            <button class="question-btn" data-question="Astronomiya haqida">Astronomiya haqida</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapsible-section">
+                    <div class="section-header" data-target="report-card">
+                        <h3>📈 Hisobot</h3>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div id="report-card" class="info-card collapsible-content">
+                        <div class="report-content">
+                            <div class="report-item">
+                                <span>Bugungi savollar:</span>
+                                <strong id="today-questions">0</strong>
+                            </div>
+                            <div class="report-item">
+                                <span>Jami savollar:</span>
+                                <strong id="total-questions">0</strong>
+                            </div>
+                            <div class="report-item">
+                                <span>Top mavzular:</span>
+                                <strong id="top-topics">-</strong>
+                            </div>
+                            <button id="generate-report" class="report-btn">Hisobot yaratish</button>
+                            
+                            <button id="reset-stats" class="report-btn reset">Statistikani tozalash</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+        
+        <footer id="footer">
+            <p id="footer-text">&copy; 2025 Mening Sun'iy Intellekt Loyiham. Barcha huquqlar himoyalangan.</p>
+        </footer>
+    </div>
+
+    
+</body>
+</html>
